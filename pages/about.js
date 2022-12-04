@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Hero from "../components/landing/Hero";
-import Introduction from "../components/landing/Introduction";
-import Blogs from "../components/landing/blogs/Blogs";
+import Breadcrumb from "../components/share/Breadcrumb";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Head>
@@ -13,9 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero />
-        <Introduction />
-        <Blogs />
+        <Breadcrumb name="About" />
       </main>
     </div>
   );

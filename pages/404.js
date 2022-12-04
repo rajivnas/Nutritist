@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Hero from "../components/landing/Hero";
-import Introduction from "../components/landing/Introduction";
-import Blogs from "../components/landing/blogs/Blogs";
+import React from "react";
+import Breadcrumb from "../components/share/Breadcrumb";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <div>
       <Head>
@@ -13,9 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero />
-        <Introduction />
-        <Blogs />
+        <Breadcrumb name="404" />
+        <div className="container"></div>
       </main>
     </div>
   );
